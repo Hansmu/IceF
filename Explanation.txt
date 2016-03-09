@@ -1,2 +1,6 @@
 Due to the requirement of my name not allowed to be visible, I decided to use hashCodes instead for my name identification.
-Since hashCode has a possibility for a collision, then in order to add uniqueness I began by taking the first and last names as separate entities. So instead of a single full name hash, I have two different hashes for first and last name. Second, I also took into consideration the length of the name. However, since I am supposed to be sneaky, then I decided to make the length of the name in some way less obvious. I did so by multiplying, but I also wanted the multiplication to somehow consider the order of the lengths (eg. that 5 and 6 is not the same as 6 and 5). I accomplished that by making the first name length squared.
+Since hashCode has a possibility for a collision, then in order to add uniqueness I began by taking the first and last names as 
+separate entities. So instead of a single full name hash, I have two different hashes for first and last name. Second, I also 
+took into consideration the length of the name. However, since I am supposed to be sneaky, then I decided to make the length of 
+the name in some way less obvious. I did so by multiplying, but I also wanted the multiplication to somehow consider the order 
+of the lengths (eg. that 5 and 6 is not the same as 6 and 5). I accomplished that by making the first name length squared.
